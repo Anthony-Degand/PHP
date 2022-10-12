@@ -1,0 +1,15 @@
+ .tab, th, td{
+    border-collapse: collapse;
+    border:1px solid black;
+    text-align: center;
+} 
+
+  table tr {
+    display: grid;
+    grid-template-columns: 30fr 100fr 0fr 0fr;
+}  
+
+.titre {
+    background-color: mediumpurple;
+}
+
