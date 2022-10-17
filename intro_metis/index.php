@@ -10,7 +10,7 @@
 <body>
 <h1 class="titre">Exo 01</h1>
     <?php 
-    echo "<h5>Hello world !! </h5>";
+    echo "<h5>Hello world !! </h5>";  //afficher en php
     echo "<h4>Hello world !! </h4>";
     echo "<h3>Hello world !! </h3>";
     echo "<h2>Hello world !! </h2>";
@@ -27,11 +27,11 @@
 
 echo "<h1 class=\"titre\">Exo 02</h1>";
 
-    $date = date('d F Y');
+    $date = date('d F Y'); // afficher la date avec la methode date() en specifiant le format 
 
-    date_default_timezone_set('Europe/Paris');
-    $heure = date('H');
-    $minutes = date('i');
+    date_default_timezone_set('Europe/Paris'); // formater la date et l'heure sur paris 
+    $heure = date('H'); //déclarer une variable pour stocker les heures
+    $minutes = date('i'); // déclarer une variable pour stocker les minutes 
 
     echo ("<h1>En ce ".$date.", sur le serveur ".$_SERVER['SERVER_NAME'].", il est ".$heure."h ".$minutes."mn. </h1>");
     ?>
@@ -42,8 +42,8 @@ echo "<h1 class=\"titre\">Exo 02</h1>";
         </tr>
 
         <tr>
-            <td>GATEWAY_INTERFACE</td>
-            <td><?php echo $_SERVER['GATEWAY_INTERFACE']; ?> </td>
+            <td>GATEWAY_INTERFACE</td> 
+            <td><?php echo $_SERVER['GATEWAY_INTERFACE']; ?> </td> <!-- objet $_server[] pour accéder au information du serveur-->
         </tr>
 
         <tr>
@@ -84,11 +84,11 @@ echo "<h1 class=\"titre\">Exo 02</h1>";
 //****************************************************************** */
     <h2 class="titre">Corriger :</h2>
 
-    <?php $cejour = getdate();?>
+    <?php $cejour = getdate();?> <!--methode getdate() = deuxieme facon pour afficher la date -->
 
-    <h2>En ce <?php echo $cejour["mday"] . " " . $cejour["month"] . " " . $cejour["year"]; ?>,
-    sur le serveur <?php echo $_SERVER["SERVER_NAME"]; ?>,
-    il est <?php echo $cejour["hours"] . "h " . $cejour["minutes"] . "mn" ;?>.<br /><br /></h2>
+    <h2>En ce <?php echo $cejour["mday"] . " " . $cejour["month"] . " " . $cejour["year"]; ?>, <!--Utilisation des objet jours mois années-->
+    sur le serveur <?php echo $_SERVER["SERVER_NAME"]; ?>,      <!--objet server-->
+    il est <?php echo $cejour["hours"] . "h " . $cejour["minutes"] . "mn" ;?>.<br /><br /></h2> <!--objet heures et minutes-->
 
     <table border="1">
     <?php foreach ($_SERVER as $variable=>$valeur) { ?>

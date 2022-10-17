@@ -1,0 +1,10 @@
+
+table tr {
+border-bottom: 2px solid whitesmoke !important;
+display: grid !important;
+grid-template-columns: 20fr 30fr 20fr 20fr 30fr;
+}
+
+table {
+width:100vw;
+}
