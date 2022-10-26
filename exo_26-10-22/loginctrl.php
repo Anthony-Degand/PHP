@@ -10,6 +10,7 @@ if ($_POST["username"] == "antho" AND $_POST["password"] == "azerty") {
     exit(); // préférable de mettre exit() après le header location
 }else {
     echo "<h1>pseudo ou mot de passe incorrecte</h1>";
+    echo "<h2>retour à la page de <a href='login.html'>connection</a></h2>";
 }
 
 
