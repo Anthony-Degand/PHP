@@ -8,3 +8,10 @@ tr td {
     background-color: limegreen;
     font-weight: 900;
 }
+
+.table2 tr td {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    width:2vw;
+    text-align: center;
+}
