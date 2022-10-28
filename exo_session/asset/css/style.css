@@ -1,41 +1,60 @@
+/* Flex */
+/* display: flex (permet de rendre les elements flex) */
+/* justify-content: center (centrer l'élément horizontalement) */
+/* align-items: center (centrer l'élément verticalement) */
+/* flex-direction: column; (en colonne de haut en bas) row; (de gauche a droite) */
+
+
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
+.container1 {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containersub0 {
+    width:95%;
+    height:100%;
+    display: flex column; 
+}
+/* ***************************************************************************************************************************** */
 header {
-    height:10vh;
-    background-color: grey;
-}
-
-.navbar {
-    height:3vh;
-    background-color: blueviolet;
-    position: relative;
+display: flex;
+background-color: gray;
+justify-content: space-between;
+align-items: center;
 }
 
 .navbar ul li {
-    list-style: none;
-    display: inline-block;
-    font-weight: 900;
-}
-
-.corp {
-    height:70vh;
-}
-
-li, li a {
-color:white;
+display: inline-block;
 letter-spacing: 2px;
 }
 
-li {
-    margin-right: 30px;
-    float:right;
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
 }
 
+.navbar{
+    width:25%;
+    background-color: yellow;
+}
+
+/* ****************************************************************************************************************************** */
+.corp {
+    height:80vh;
+    background-image: url("C:/laragon/www/PHP/exo_session/asset/img/engine-car-wallpaper-preview.jpg");  
+}
+/* ********************************************************************************************************************************* */
 footer {
-    height:10vh;
-    background-color: grey;
+    height:16vh;
+    background-color: darkgrey;
 }
-

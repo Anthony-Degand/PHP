@@ -85,11 +85,9 @@ function multiplier($nombre){
 
 <?php
 
- echo multiplier($nombre=1),multiplier($nombre=2),multiplier($nombre=3),multiplier($nombre=4),multiplier($nombre=5);
+echo multiplier($nombre=1),multiplier($nombre=2),multiplier($nombre=3),multiplier($nombre=4),multiplier($nombre=5);
 
 ?>
-
-
 
 
 
