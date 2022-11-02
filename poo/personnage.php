@@ -4,7 +4,7 @@ class personnage{ // On ouvre une class
 
     public $vie = 80; // definis des variables 
     public $atk = 20;
-    public $nom;
+    public $nom; // bonne pratique d'instancier une variable meme si elle n'a pas de valeur 
 
     public function crier(){ // crée des fonctions
         echo 'leeroy jenkin\'s';
@@ -23,8 +23,14 @@ class personnage{ // On ouvre une class
 
     return $this->vie <= 0; // si la vie est inferieur ou égale a 0 il est mort
   }
+  private function empecher_negatif(){ // fonction utile uniquement a l'interieur de ma class donc c'est une bonne pratique de la metre en priver
+    if($this->vie < 0){ // si la vie passe sous 0
+        $this->vie = 0; // elle reste a 0
+    }
+  }
   public function attaque($cible){
     $cible->vie -= $this->atk; // la vie de la cible - l'attaque de l'attaquant
+    $cible->empecher_negatif();
     var_dump($cible); // je vérifie l'identiter de la cible ( facultatif )
 
   }
