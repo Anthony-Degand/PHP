@@ -39,7 +39,7 @@ class voiture {
         return $this->capacite_reservoir;
     }
     public function getNivEssence(){
-        return $this->niveau_essence;
+        return $this->niveau_essence = 5.0;
     }
     public function getNbrPlace(){
         return $this->nbr_place;
@@ -48,13 +48,17 @@ class voiture {
     //     return $this->msg_dashboard;
     // }
 
-    public function setAssure($assure){
-        return $this->assure = $assure;
-    }
+    // public function setAssure($assure){
+    //     return $this->assure = $assure;
+    // }
 
     public function setDashboard($msg_dashboard){
         return $this->msg_dashboard = $msg_dashboard;
     }
-}
+
+
+    
+    }
+
 
 ?>

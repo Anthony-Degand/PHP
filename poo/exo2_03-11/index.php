@@ -11,11 +11,14 @@ $voiture1->getCouleur();
 $voiture1->getPoids();
 $voiture1->getPuissance();
 $voiture1->getCapReservoir();
-$voiture1->getNivEssence(5.0);
+$voiture1->getNivEssence();
 $voiture1->getNbrPlace();
+$voiture1->setDashboard('Bienvenue à bord');
+
+
 
 echo"<pre>";
-var_dump($voiture1);
+print_r($voiture1);
 
 require("C:\laragon\www\PHP\poo/exo2_03-11/footer.php");
 
