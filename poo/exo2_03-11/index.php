@@ -14,11 +14,10 @@ $voiture1->getCapReservoir();
 $voiture1->getNivEssence();
 $voiture1->getNbrPlace();
 $voiture1->setDashboard('Bienvenue à bord');
-
-
-
+$voiture1->setassure(false);
 echo"<pre>";
 print_r($voiture1);
+$voiture1->getassure();
 
 require("C:\laragon\www\PHP\poo/exo2_03-11/footer.php");
 

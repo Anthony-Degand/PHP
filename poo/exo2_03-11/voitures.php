@@ -44,20 +44,32 @@ class voiture {
     public function getNbrPlace(){
         return $this->nbr_place;
     }
+
+    public function setAssure($assure){
+        return $this->assure=false;
+     }
     // public function getMsgDashboard(){
     //     return $this->msg_dashboard;
     // }
 
-    // public function setAssure($assure){
-    //     return $this->assure = $assure;
-    // }
+     public function getAssure(){
+        echo "<br>";
+        var_dump($this->assure=true);
+        return print_r(" <br> Vous étes maintenant assurer."); 
+     }
 
     public function setDashboard($msg_dashboard){
         return $this->msg_dashboard = $msg_dashboard;
     }
 
+    // public function assurance(){
+    //     if($assure){
+    //         return true;
+    //     }
 
+    // }
     
+
     }
 
 
