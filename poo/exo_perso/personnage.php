@@ -36,7 +36,3 @@ class personnage{ // On ouvre une class
   }
 
 }
-
-
-
-?>
